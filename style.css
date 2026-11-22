@@ -666,6 +666,7 @@ input[type="email"] {
   background-color: #38bdf8;
   transform: translateY(-5px); /* Effet de levier au survol */
 }
+
 /* =========================================================
    13. ADAPTATION MOBILE (ÉCRANS < 600PX)
    ========================================================= */
