@@ -666,3 +666,27 @@ input[type="email"] {
   background-color: #38bdf8;
   transform: translateY(-5px); /* Effet de levier au survol */
 }
+/* =========================================================
+   13. ADAPTATION MOBILE (ÉCRANS < 600PX)
+   ========================================================= */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .menu {
+    justify-content: center;
+  }
+
+  .liens {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .btn-back-to-top {
+    width: 45px;
+    height: 45px;
+    bottom: 14px;
+    right: 14px;
+  }
+}
