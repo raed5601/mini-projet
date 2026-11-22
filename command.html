@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXUS GEAR | Commander</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="vitrine-top">
+    <p>Notre vitrine — Formulaire de commande</p>
+  </header>
+
+  <nav class="menu">
+    <a href="index.html" class="logo">NEXUS<span>GEAR</span></a>
+    <ul class="liens">
+      <li><a href="index.html#a-propos">À propos</a></li>
+      <li><a href="index.html#produits">Produits</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="carte.html">Carte des prix</a></li>
+      <li><a href="command.html" class="actif">Commander</a></li>
+    </ul>
+  </nav>
+
+  <main class="conteneur section-bloc">
+    <h1 class="titre-section">Commander votre équipement ou PC personnalisé</h1>
+
+    <form class="formulaire-detaille" action="#" method="post">
+      <fieldset class="groupe-champs">
+        <legend>Vos coordonnées</legend>
+
+        <div class="champ">
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" name="nom" placeholder="Ex : Ben Ali" required>
+        </div>
+
+        <div class="champ">
+          <label for="prenom">Prénom :</label>
+          <input type="text" id="prenom" name="prenom" placeholder="Ex : Youssef" required>
+        </div>
+
+        <div class="champ">
+          <label for="email">Adresse électronique :</label>
+          <input type="email" id="email" name="email" placeholder="vous@exemple.tn" required>
+        </div>
+
+        <div class="champ">
+          <label for="telephone">Téléphone :</label>
+          <input type="tel" id="telephone" name="telephone" placeholder="+216 20 000 000" required>
+        </div>
+
+        <div class="champ">
+          <label for="code-postal">Code postal :</label>
+          <input type="text" id="code-postal" name="code-postal" placeholder="Ex : 3000">
+        </div>
+
+        <div class="champ">
+          <label for="adresse">Adresse de livraison :</label>
+          <textarea id="adresse" name="adresse" rows="3" placeholder="Rue, quartier, immeuble..." required></textarea>
+        </div>
+
+        <div class="champ">
+          <label for="gouvernorat">Gouvernorat :</label>
+          <select id="gouvernorat" name="gouvernorat">
+            <option value="Sfax">Sfax</option>
+            <option value="Tunis">Tunis</option>
+            <option value="Sousse">Sousse</option>
+            <option value="Nabeul">Nabeul</option>
+            <option value="Monastir">Monastir</option>
+            <option value="Autre">Autre</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset class="groupe-champs">
+        <legend>Votre commande gaming</legend>
+
+        <div class="champ">
+          <span class="label-titre">Type de demande :</span>
+          <div class="options-ligne">
+            <label><input type="radio" name="type_demande" value="pc_complet"> PC Gamer complet</label>
+            <label><input type="radio" name="type_demande" value="composant"> Carte graphique / composant</label>
+            <label><input type="radio" name="type_demande" value="peripherique"> Périphériques (souris, clavier, casque)</label>
+            <label><input type="radio" name="type_demande" value="autre"> Autre</label>
+          </div>
+        </div>
+
+        <div class="champ">
+          <label for="quantite">Quantité :</label>
+          <input type="number" id="quantite" name="quantite" min="1" value="1">
+        </div>
+
+        <div class="champ">
+          <span class="label-titre">Articles ou options souhaités :</span>
+          <div class="options-ligne">
+            <label><input type="checkbox" name="articles" value="pc_titan"> PC Gamer Titan RTX 4080</label>
+            <label><input type="checkbox" name="articles" value="souris_viper"> Souris Viper Pro Wireless</label>
+            <label><input type="checkbox" name="articles" value="clavier_k95"> Clavier Mécanique K95 RGB</label>
+            <label><input type="checkbox" name="articles" value="gpu_4070"> Carte Graphique RTX 4070 Ti</label>
+            <label><input type="checkbox" name="articles" value="casque_71"> Casque HyperSound 7.1</label>
+            <label><input type="checkbox" name="articles" value="montage"> Montage &amp; test atelier</label>
+          </div>
+        </div>
+
+        <div class="champ">
+          <label for="rgb-level">Intensité RGB souhaitée :</label>
+          <input type="range" id="rgb-level" name="rgb-level" min="0" max="100" value="50">
+        </div>
+
+        <div class="champ">
+          <label for="couleur-accent">Couleur principale du setup :</label>
+          <input type="color" id="couleur-accent" name="couleur-accent" value="#00f0ff">
+        </div>
+
+        <div class="champ">
+          <label for="gravure-note">Note / configuration demandée :</label>
+          <input type="text" id="gravure-note" name="gravure-note" placeholder="Ex : Profil XMP activé, Windows installé">
+        </div>
+
+        <div class="champ">
+          <label for="photo-modele">Photo de modèle ou inspiration :</label>
+          <input type="file" id="photo-modele" name="photo-modele" accept="image/*">
+        </div>
+      </fieldset>
+
+      <fieldset class="groupe-champs">
+        <legend>Confirmation</legend>
+
+        <div class="champ">
+          <label for="date-retrait">Date souhaitée :</label>
+          <input type="date" id="date-retrait" name="date-retrait">
+        </div>
+
+        <div class="champ">
+          <label for="pack-service">Pack &amp; finition :</label>
+          <select id="pack-service" name="pack-service" size="4">
+            <optgroup label="Packs PC &amp; Hardware">
+              <option value="cable_management">Câblage custom &amp; test stress</option>
+              <option value="garantie_plus">Extension garantie atelier</option>
+            </optgroup>
+            <optgroup label="Livraison &amp; Retrait">
+              <option value="retrait_boutique">Retrait en boutique</option>
+              <option value="livraison_domicile">Livraison à domicile</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="champ">
+          <label for="precisions">Précisions complémentaires :</label>
+          <textarea id="precisions" name="precisions" rows="3" placeholder="Ajoutez vos préférences de composants ou créneau..."></textarea>
+        </div>
+
+        <div class="champ">
+          <label for="lien-social">Lien setup / Instagram / Discord :</label>
+          <input type="url" id="lien-social" name="lien-social" placeholder="https://instagram.com/mon_setup">
+        </div>
+
+        <div class="champ">
+          <label for="heure-retrait">Heure souhaitée :</label>
+          <input type="time" id="heure-retrait" name="heure-retrait">
+        </div>
+
+        <div class="boutons-form">
+          <button type="submit" class="btn">Envoyer ma commande</button>
+          <button type="reset" class="btn btn-secondaire">Tout effacer</button>
+        </div>
+      </fieldset>
+    </form>
+
+    <section class="encart-statut">
+      <h3>Récapitulatif &amp; Statut</h3>
+      <p>Votre demande est prête à être vérifiée avant envoi. Le statut de la commande s'affichera ici après validation.</p>
+    </section>
+  </main>
+
+  <footer class="pied">
+    <p>&copy; 2026 NEXUS GEAR — Matériel Gaming &amp; E-Sport</p>
+  </footer>
+
+</body>
+</html>
