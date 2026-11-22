@@ -691,3 +691,8 @@ input[type="email"] {
     right: 14px;
   }
 }
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #ff2a85;
+  outline-offset: 3px;
+}

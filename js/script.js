@@ -110,3 +110,13 @@ function afficherStatut(texte, estErreur) {
 
   encartStatut.style.borderLeftColor = estErreur ? "#ff2a85" : "#00f0ff";
 }
+
+// 3. Affichage en direct de la valeur du curseur RGB (sur command.html)
+const sliderRgb = document.querySelector("#rgb-level");
+const texteRgb = document.querySelector("#rgb-valeur");
+
+if (sliderRgb && texteRgb) {
+  sliderRgb.addEventListener("input", function () {
+    texteRgb.textContent = sliderRgb.value + "%";
+  });
+}
